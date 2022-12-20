@@ -9,7 +9,7 @@ describe("signup tests exercise", () => {
     // Test level 1
     it('should dispaly all input fields border in red and error message in gold with name of empty fields.', () => {
         // Now cypress API (get) will click submit button to check
-        cy.get('[data-cy="submit-sup"]').click()
+        cy.get('[data-cy="form-sup"]').submit()
         cy.get('[data-cy="info-sup"]').should('have.length', 1)
         cy.get('[data-cy="info-sup"]').contains("firstname,lastname,email,password is required")
     })
@@ -19,7 +19,7 @@ describe("signup tests exercise", () => {
         // Now cypress API (get) will click submit button to check
         cy.get('[data-cy="fname-sup"]').type('Erik')
         cy.get('[data-cy="email-sup"]').type('erik.andersson@email.com')
-        cy.get('[data-cy="submit-sup"]').click()
+        cy.get('[data-cy="form-sup"]').submit()
         cy.get('[data-cy="info-sup"]').should('have.length', 1)
         cy.get('[data-cy="info-sup"]').contains("lastname,password is required")
     })
@@ -31,9 +31,9 @@ describe("signup tests exercise", () => {
         cy.get('[data-cy="lname-sup"]').type('Andersson')
         cy.get('[data-cy="email-sup"]').type('erik.andersson@email.com')
         cy.get('[data-cy="password-sup"]').type('password')
-        cy.get('[data-cy="submit-sup"]').click()
+        cy.get('[data-cy="form-sup"]').submit()
         cy.get('[data-cy="info-sup"]').should('have.length', 1)
-        cy.get('[data-cy="info-sup"]').contains("Welcome ERIK! You are registered")
+        cy.get('[data-cy="info-sup"]').contains("Welcome ERIK! You are registered!")
     })
 
 })
