@@ -37,5 +37,5 @@
 
 <sub>Example (say, user's firstname is Erik):</sub>
 
-`Congratualions ERIK! You are registered`
+`Welcome ERIK! You are registered`
 

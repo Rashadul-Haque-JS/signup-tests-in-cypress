@@ -10,17 +10,17 @@
 </head>
 
 <body>
-   
-    <p class="info"></p>
-    <form id="form-signup">
+    <!-- Selector 'sup' stands for signup which is used to maintain unique name -->
+    <p class="info" data-cy="info-sup"></p>
+    <form id="form-signup" data-cy="form-sup">
         <label for="form">Signup</label>
-        <input class="input-firstname" type="text" placeholder="first name" name="firstname">
-        <input class="input-lastname" type="text" placeholder="last name" name="lastname">
-        <input class="input-email" type="text" placeholder="email" name="email">
-        <input class="input-password" type="text" placeholder="password" name="password">
-        <button type="submit" class="btn">Submit</buttontype=class=>
+        <input class="input-firstname" data-cy="fname-sup" type="text" placeholder="first name" name="firstname">
+        <input class="input-lastname" data-cy="lname-sup" type="text" placeholder="last name" name="lastname">
+        <input class="input-email" data-cy="email-sup" type="text" placeholder="email" name="email">
+        <input class="input-password" data-cy="password-sup" type="text" placeholder="password" name="password">
+        <button data-cy="submit-sup" class="btn">Submit</buttontype=class=>
     </form>
-    
+
     <script src="./script.js"></script>
 </body>
 

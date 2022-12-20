@@ -29,7 +29,7 @@ button.addEventListener('click',(e)=>{
         const json = JSON.stringify(userData);
         console.log(json)
         info.style.color = '#fff'
-        info.innerHTML=(`Congratualions ${JSON.parse(json).firstname.toUpperCase()}! You are registered.`)
+        info.innerHTML=(`Welcome ${JSON.parse(json).firstname.toUpperCase()}! You are registered.`)
       }
     
 })
