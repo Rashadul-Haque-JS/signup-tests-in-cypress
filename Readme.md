@@ -35,7 +35,7 @@
 
 - Now a greetings message will be displayed after mentioning user's firstname in uppercase. Fonts color white.
 
-<sub>Example (say, user's firstname is Erik):</sub>
+<sub>Example (say, user's firstname is Foo):</sub>
 
-`Welcome ERIK! You are registered`
+`WELCOME Foo!`
 

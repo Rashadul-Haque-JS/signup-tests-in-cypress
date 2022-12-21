@@ -1,15 +1,11 @@
+
 const formSignup = document.querySelector('#form-signup')
-const username = document.querySelector('.input-name')
-const password = document.querySelector('.input-password')
-const button = document.querySelector('.btn')
 const info = document.querySelector('.info')
+const infoAPI = document.querySelector('.api-info')
 const inputs = document.querySelectorAll('input')
-const navSignup = document.querySelector('.nav-signup')
-const navSignin = document.querySelector('.nav-signin')
 
 
-const handleSubmit = () => {
-
+const handleSubmit = async () => {
     const errors = []
     const userData = {}
     inputs.forEach(input => {
@@ -26,10 +22,19 @@ const handleSubmit = () => {
 
     if (!errors.length && Object.entries(userData).length !== 0) {
         info.innerHTML = ''
-        const json = JSON.stringify(userData);
-        console.log(json)
         info.style.color = '#fff'
-        info.innerHTML = (`Welcome ${JSON.parse(json).firstname.toUpperCase()}! You are registered!`)
+        info.style.letterSpacing = '6px'
+        info.innerHTML = (`Welcome ${userData.firstname}`).toUpperCase()
+        axios.post("http://localhost:3000/signup", userData).then(res => {
+            infoAPI.innerHTML = res.data.message
+
+        })
+
+    } else {
+        infoAPI.innerHTML = ''
+        info.style.color = 'gold'
+        info.style.letterSpacing = 'normal'
+        return false
     }
 }
 
@@ -39,3 +44,5 @@ formSignup.addEventListener('submit', (e) => {
     handleSubmit()
 
 })
+
+

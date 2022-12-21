@@ -1,0 +1,14 @@
+[
+    {
+        "firstname": "Foo",
+        "lastname": "Bar",
+        "email": "foo.bar@example.com",
+        "password": "password"
+    },
+    {
+        "firstname": "Mohammed",
+        "lastname": "Haque",
+        "email": "jbeaushaw7@dyndns.org",
+        "password": "password"
+    }
+]

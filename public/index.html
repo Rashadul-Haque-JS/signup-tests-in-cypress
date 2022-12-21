@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,9 @@
 </head>
 
 <body>
-    <!-- Selector 'sup' stands for signup which is used to maintain unique name -->
+    <header >CYPRESS EXERCISE <SPan>Signup form testing</SPan></header>
+    <!-- Selector 'sup' stands for signup which use to maintain unique name of test id -->
+    <p class="api-info" data-cy="api-info-sup"></p>
     <p class="info" data-cy="info-sup"></p>
     <form id="form-signup" data-cy="form-sup">
         <label for="form">Signup</label>
@@ -21,7 +22,9 @@
         <button data-cy="submit-sup" class="btn">Submit</button>
     </form>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
     <script src="./script.js"></script>
+    
 </body>
 
 </html>
