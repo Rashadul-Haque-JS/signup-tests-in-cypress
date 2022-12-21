@@ -6,9 +6,9 @@
         "password": "password"
     },
     {
-        "firstname": "Mohammed",
-        "lastname": "Haque",
-        "email": "jbeaushaw7@dyndns.org",
+        "firstname": "Foo",
+        "lastname": "Bar",
+        "email": "foo.bar@example.com",
         "password": "password"
     }
 ]

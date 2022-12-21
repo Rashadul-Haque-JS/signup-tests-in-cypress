@@ -5,7 +5,7 @@ const infoAPI = document.querySelector('.api-info')
 const inputs = document.querySelectorAll('input')
 
 
-const handleSubmit = async () => {
+const handleSubmit = () => {
     const errors = []
     const userData = {}
     inputs.forEach(input => {
@@ -33,7 +33,6 @@ const handleSubmit = async () => {
     } else {
         infoAPI.innerHTML = ''
         info.style.color = 'gold'
-        info.style.letterSpacing = 'normal'
         return false
     }
 }

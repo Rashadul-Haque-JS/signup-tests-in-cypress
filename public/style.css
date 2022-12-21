@@ -33,7 +33,7 @@ body #form-signup{
 
 body header{
     width: 100vw;
-    padding: 12px 0px;
+    padding: 6px 0px;
     text-align: center;
     background: #fff;
     color:#000;
@@ -76,4 +76,16 @@ body .api-info{
     color: gold;
     font-weight: bold;
     font-size: .9rem;
+}
+
+body footer{
+    width: 100vw;
+    padding: 6px 0px;
+    text-align: center;
+    font-size: .6rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    
 }
